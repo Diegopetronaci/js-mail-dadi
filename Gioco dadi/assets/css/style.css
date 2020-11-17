@@ -1,0 +1,16 @@
+.d-flex{
+  display: flex;
+}
+
+.mt_200{
+  margin-top: 200px;
+}
+
+.space-around{
+  justify-content: space-around;
+}
+
+.margin_auto{
+  width: 80%;
+  margin: auto;
+}

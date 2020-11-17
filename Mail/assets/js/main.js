@@ -18,9 +18,10 @@ var autorizzati = utenti [0];
 // stampa un messaggio appropriato sull’esito del controllo.
 
 if (email == autorizzati) {
-  alert ("Email Autorized");
+  // alert ("Email Autorized");
+  document.getElementById("esito") .innerHTML = "L' Email è stata Accettata";
   console.log("accepted");
 } else {
-  alert ("Email not Autorized");
+  document.getElementById("esito") .innerHTML = "L' Email è stata rifiutata";
   console.log("blocked");
 }
