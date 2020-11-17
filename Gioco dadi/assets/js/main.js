@@ -25,24 +25,35 @@
 
 var btnGeneraMio = document.getElementById('generatore_mio');
 var btnGeneraBot = document.getElementById('generatore_bot');
+var btnGeneraFinale = document.getElementById('generatore_finale')
 
+var dadoMio = Number(Math.floor(Math.random() * 6) + 1);
+var dadoBot = Number(Math.floor(Math.random() * 6) + 1);
 
 btnGeneraMio.addEventListener("click", function () {
-var dadoMio = Math.floor(Math.random() * 6) + 1;
 document.getElementById("numero_mio").innerHTML = "è uscito il numero: " + dadoMio;
 console.log(dadoMio);
 });
 
 btnGeneraBot.addEventListener("click", function () {
-var dadoBot = Math.floor(Math.random() * 6) + 1;
 document.getElementById("numero_bot").innerHTML = "è uscito il numero: " + dadoBot;
 console.log(dadoBot);
 });
 
-if (dadoMio > dadoBot) {
-  alert("YOU WIN");
-  console.log("vittoria");
-} else if {
-  alert("YOU LOSE");
-  console.log("sconfitta");
-}
+btnGeneraFinale.addEventListener("click", function () {
+  if (dadoMio > dadoBot) {
+    alert("YOU WIN");
+  } else {
+    alert("YOU LOSE");
+  };
+});
+
+
+
+// if (dadoMio > dadoBot) {
+//   alert("YOU WIN");
+//   console.log("vittoria");
+// } else if {
+//   alert("YOU LOSE");
+//   console.log("sconfitta");
+// }
